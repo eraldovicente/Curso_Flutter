@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'package:contador/src/pages/home_page.dart';
+
 class MyApp extends StatelessWidget {
 
   @override 
@@ -7,7 +9,7 @@ class MyApp extends StatelessWidget {
   
     return  MaterialApp(
       home: Center(
-        child: Text('Hola, Gabriel!')
+        child: HomePage()
       )
     );
   }

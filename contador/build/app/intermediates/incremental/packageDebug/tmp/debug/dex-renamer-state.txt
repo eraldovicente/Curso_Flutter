@@ -1,4 +1,4 @@
-#Tue Nov 24 19:32:01 BRT 2020
+#Tue Nov 24 21:10:53 BRT 2020
 base.0=C\:\\Users\\Eraldo_Vicente\\Desktop\\Curso_Flutter\\Curso_Flutter\\contador\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

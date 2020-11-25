@@ -4,6 +4,8 @@ class HomePage extends StatelessWidget{
 
   final estiloTexto = new TextStyle( fontSize: 25 );
 
+  final conteo = 10;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,7 +18,7 @@ class HomePage extends StatelessWidget{
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Text('Número de click:', style: estiloTexto ),
-            Text('0', style: estiloTexto )
+            Text( '$conteo', style: estiloTexto )
           ]
         )
       ),
@@ -26,6 +28,8 @@ class HomePage extends StatelessWidget{
         onPressed: () {
 
           print('Hola mundo!');
+          // Necessita um StatefullWidget
+          // conteo = conteo + 1 
         },
       )
     );

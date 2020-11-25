@@ -30,18 +30,25 @@ class _ContadorPageState extends State<ContadorPage> {
         )
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: FloatingActionButton(
-        child: Icon( Icons.add ),
-        onPressed: () {
-
-          // Necessita um StatefullWidget
-          _conteo++; 
-
-          setState(() {
-
-          });
-        },
-      )
+      floatingActionButton: _crearBotones()
     );
   }
+
+  Widget _crearBotones() {
+
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        SizedBox(width: 10),
+        FloatingActionButton( child: Icon( Icons.exposure_zero ), onPressed: null),
+        Expanded(child: SizedBox()),
+        FloatingActionButton( child: Icon( Icons.remove ), onPressed: null),
+        SizedBox( width: 5.0 ),
+        FloatingActionButton( child: Icon( Icons.add ), onPressed: null),
+        SizedBox(width: 10),
+      ],);
+    
+    
+  }
+
 }

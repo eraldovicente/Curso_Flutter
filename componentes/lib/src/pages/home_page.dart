@@ -42,6 +42,8 @@ class HomePage extends StatelessWidget {
 
     final List<Widget> opciones = [];
 
+    // if ( data == null ) { return []; };
+
     data.forEach( (opt) {
 
       final widgetTemp = ListTile(

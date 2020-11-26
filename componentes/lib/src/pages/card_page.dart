@@ -10,7 +10,9 @@ class CardPage extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.all(10.0),
         children: [
-          _cardTipo1()
+          _cardTipo1(),
+          SizedBox(height: 30.0),
+          _cardTipo2()
         ]),
     );
   }
@@ -42,4 +44,29 @@ class CardPage extends StatelessWidget {
       )
     );
   }
+
+  Widget _cardTipo2() {
+
+    return Card(
+      child: Column(
+        children: [
+          FadeInImage(
+            image: NetworkImage('https://image.winudf.com/v2/image/Y29tLkRyZWFtV2FsbHBhcGVycy5GYW50YXN5TGFuZHNjYXBlMDFfc2NyZWVuc2hvdHNfMV80NjI0YmQ2MA/screen-1.jpg?fakeurl=1&type=.jpg'),
+            placeholder: AssetImage('assets/jar-loading.gif'),
+            fadeInDuration: Duration( milliseconds: 200 ),
+            height: 300.0,
+            fit: BoxFit.cover,
+          ),
+          // Image(
+          //   image: NetworkImage('https://image.winudf.com/v2/image/Y29tLkRyZWFtV2FsbHBhcGVycy5GYW50YXN5TGFuZHNjYXBlMDFfc2NyZWVuc2hvdHNfMV80NjI0YmQ2MA/screen-1.jpg?fakeurl=1&type=.jpg'),
+          // ),
+          Container(
+            padding: EdgeInsets.all(10.0),
+            child: Text('No tengo idea de que poner')
+          )
+        ],
+      )
+    );
+  }
 }
+        

@@ -35,7 +35,7 @@ class _InputPageState extends State<InputPage> {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(20.0)
         ),
-        counter: Text('Letras ${ _nombre.length }'),
+        counter: Text('Letras ${_nombre?.length}'),
         hintText: 'Nombre de la persona',
         labelText: 'Nombre',
         helperText: 'Sólo es el nombre',
@@ -43,7 +43,7 @@ class _InputPageState extends State<InputPage> {
         icon: Icon( Icons.account_circle )
       ),
       onChanged: (valor) {
-        
+
         setState(() {          
           _nombre = valor;
         });
@@ -51,7 +51,7 @@ class _InputPageState extends State<InputPage> {
       },
     );
   }
-
+  
   Widget _crearPersona() {
 
     return ListTile(
@@ -59,4 +59,6 @@ class _InputPageState extends State<InputPage> {
     );
 
   }
+
+
 }

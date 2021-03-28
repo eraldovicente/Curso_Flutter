@@ -30,16 +30,17 @@ class MovieHorizontal extends StatelessWidget {
     return peliculas.map( (pelicula) {
       
       return Container(
-        margin: EdgeInsets.only(right: 15.0),
+        margin: EdgeInsets.only(right: 2.0),
         child: Column(
           children: [
             ClipRRect(
-              borderRadius: BorderRadius.circular(20.0),
+              borderRadius: BorderRadius.circular(10.0),
               child: FadeInImage(
                 image: NetworkImage( pelicula.getPosterImg() ),
                 placeholder: AssetImage('assets/img/no-image.jpg'),
                 fit: BoxFit.cover,
-                height: 160.0,
+                width: 80.0,
+                height: 92.0,
               ),
             ),
             SizedBox(height: 5.0),

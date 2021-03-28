@@ -10,7 +10,7 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(      
       appBar: AppBar(
         centerTitle: false,
         title: Text('Películas en cines'),

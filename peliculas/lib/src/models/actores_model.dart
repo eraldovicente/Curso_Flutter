@@ -18,6 +18,7 @@ class Actor {
   int castId;
   String character;
   String creditId;
+  String name;
   int gender;
   int id;
   int order;
@@ -27,6 +28,7 @@ class Actor {
     this.castId,
     this.character,
     this.creditId,
+    this.name,
     this.gender,
     this.id,
     this.order,
@@ -38,6 +40,7 @@ class Actor {
     castId      = json['cast_id'];
     character   = json['character'];
     creditId    = json['credit_id'];
+    name        = json['name'];
     gender      = json['gender'];
     id          = json['id'];
     order       = json['order'];

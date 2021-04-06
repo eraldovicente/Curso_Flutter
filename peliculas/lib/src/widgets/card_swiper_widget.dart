@@ -20,8 +20,13 @@ class CardSwiper extends StatelessWidget {
           layout: SwiperLayout.STACK,
           itemWidth: _screenSize.width * 0.7,
           itemHeight: _screenSize.height * 0.5,
-          itemBuilder: (BuildContext context, int index){            
-            return ClipRRect(
+          itemBuilder: (BuildContext context, int index){    
+
+            peliculas[index].uid = UniqueKey().toString();
+
+            return Hero(
+              tag: peliculas[index].uid,
+              child: ClipRRect(
                   borderRadius: BorderRadius.circular(20.0),
                   child: GestureDetector(
                     onTap: () => Navigator.pushNamed(context, 'detalle', arguments: peliculas[index]),
@@ -31,7 +36,8 @@ class CardSwiper extends StatelessWidget {
                       fit: BoxFit.cover,
                     ),
                   )
-                );
+                ),
+            );
           },
           itemCount: 3,
           // pagination: new SwiperPagination(),

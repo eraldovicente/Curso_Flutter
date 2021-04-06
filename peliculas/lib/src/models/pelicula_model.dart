@@ -17,6 +17,8 @@ class Peliculas {
 
 class Pelicula {
 
+  String uid;
+
   bool adult;
   String backdropPath;
   List<int> genreIds;

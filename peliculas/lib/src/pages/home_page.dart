@@ -21,7 +21,9 @@ class HomePage extends StatelessWidget {
         actions: [
           IconButton(
             icon: Icon( Icons.search ),
-            onPressed: () {}
+            onPressed: () {
+              // showSearch();
+            }
           )
         ],
       ),

@@ -18,7 +18,8 @@ class BotonesPage extends StatelessWidget {
             )
           )
         ],
-      )
+      ),
+      bottomNavigationBar: _BottomNavigationBar(context)
     );
   }
 
@@ -80,6 +81,36 @@ class BotonesPage extends StatelessWidget {
             Text('Classify this transaction into a particular category', style: TextStyle( color: Colors.white, fontSize: 15.0 ))
           ]
         ),
+      ),
+    );
+  }
+
+  Widget _BottomNavigationBar(BuildContext context) {
+
+    return Theme(
+      data: Theme.of(context).copyWith(
+        canvasColor: Color.fromRGBO(55, 57, 84, 1.0),
+        primaryColor: Colors.pinkAccent,
+        textTheme: Theme.of(context).textTheme
+          .copyWith( caption: TextStyle( color: Color.fromRGBO(116, 117, 152, 1.0)))
+      ),
+      child: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon( Icons.calendar_today ),
+            label: ''
+          ),
+          BottomNavigationBarItem(
+            icon: Icon( Icons.pie_chart_outlined ),
+            label: ''
+          ),
+          BottomNavigationBarItem(
+            icon: Icon( Icons.supervised_user_circle ),
+            label: ''
+          )
+        ]
       ),
     );
   }
